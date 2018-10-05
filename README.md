@@ -14,7 +14,14 @@
 
 
 ## 演示命令
-`npm install`
+`npm install` 
 `ng serve` 
 
+## 演示效果
 
+当点击app-main组件中的登录按钮 ，app-header组件中的信息发生变化
+
+当点击app-main组件中的登出按钮 ，app-header组件中的信息发生变化
+
+同理 
+如果在app-header中修改state数据 ，app-main中的数据也会做响应的变化，本Demo中没有实现，你可以随意实现不同组件间的数据变动
