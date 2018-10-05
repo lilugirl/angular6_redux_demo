@@ -1,0 +1,2 @@
+# angular6_redux_demo
+一个非常简单的Redux使用范例 基因Angular6
