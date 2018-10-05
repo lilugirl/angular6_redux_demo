@@ -20,8 +20,10 @@
 ## 演示效果
 
 当点击app-main组件中的登录按钮 ，app-header组件中的信息发生变化
+![](https://oscimg.oschina.net/oscnet/22085b5f5bf4a3dc3a4f336cfb666c85feb.jpg)
 
 当点击app-main组件中的登出按钮 ，app-header组件中的信息发生变化
+![](https://oscimg.oschina.net/oscnet/482c0d1e0be47eb6a1cc7b55a3cf367ace3.jpg)
 
 同理 
 如果在app-header中修改state数据 ，app-main中的数据也会做响应的变化，本Demo中没有实现，你可以随意实现不同组件间的数据变动
