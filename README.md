@@ -14,6 +14,7 @@
 
 
 ## 演示命令
+`npm install`
 `ng serve` 
 
 
