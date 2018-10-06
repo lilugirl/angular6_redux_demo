@@ -27,3 +27,8 @@
 
 同理 
 如果在app-header中修改state数据 ，app-main中的数据也会做响应的变化，本Demo中没有实现，你可以随意实现不同组件间的数据变动
+
+## 更新日志
+### 2018-10-06
+后来发现其实Angular并不是必须使用Redux实现状态共享，使用pulibc Service也可以在控件间共享数据 所以在页面中增加了另一个demo
+理论基础参考 https://zhuanlan.zhihu.com/p/45121775
