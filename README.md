@@ -1,27 +1,29 @@
-# Firstproject
+# 一个非常简单的Redux使用范例 基于Angular6
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+本项目在Angular6项目上展示Redux的用法 ，Rudex的使用步骤分为：
 
-## Development server
+第一步： 安装@ngrx/store 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+第二步： 在app.module中 import { StoreModule } from '@ngrx/store' 
 
-## Code scaffolding
+第三步：创建store文件夹 设置reducer和action
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+第四步：创建业务代码 对store进行select或者dispatch操作
 
-## Build
+第五步：在不同的组建中调用业务代码对state进行获取或者更新
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## 演示命令
+`npm install` 
+`ng serve` 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 演示效果
 
-## Running end-to-end tests
+当点击app-main组件中的登录按钮 ，app-header组件中的信息发生变化
+![](https://oscimg.oschina.net/oscnet/22085b5f5bf4a3dc3a4f336cfb666c85feb.jpg)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+当点击app-main组件中的登出按钮 ，app-header组件中的信息发生变化
+![](https://oscimg.oschina.net/oscnet/482c0d1e0be47eb6a1cc7b55a3cf367ace3.jpg)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+同理 
+如果在app-header中修改state数据 ，app-main中的数据也会做响应的变化，本Demo中没有实现，你可以随意实现不同组件间的数据变动
